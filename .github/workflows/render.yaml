@@ -1,0 +1,11 @@
+# Exported from Render on 2024-06-18T17:29:30Z
+services:
+- type: web
+  name: Boston-House-Pricing
+  runtime: python
+  repo: https://github.com/smreetyyadav37/Boston_House_Price_Prediction
+  plan: free
+  region: singapore
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
+version: "1"
